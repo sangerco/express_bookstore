@@ -3,6 +3,8 @@
 
 const express = require("express");
 const app = express();
+const jsonschema = require("jsonschema");
+const bookSchema = require('./schemas/bookSchema.json')
 
 app.use(express.json());
 
